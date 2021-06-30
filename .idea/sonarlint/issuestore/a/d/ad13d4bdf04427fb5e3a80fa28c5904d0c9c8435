@@ -1,0 +1,52 @@
+
+T
+java:S4973"9Use the "equals" method if value comparison was intended.(€·şúüÿÿÿÿ
+T
+java:S4973'"9Use the "equals" method if value comparison was intended.(˜Øú»ÿÿÿÿÿ
+T
+java:S49730"9Use the "equals" method if value comparison was intended.(ªùïÖÿÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ÈÿÄ
+J
+java:S6212"/Declare this local variable with "var" instead.(¤•×’øÿÿÿÿ
+E
+java:S6212"/Declare this local variable with "var" instead.(…şü¦
+S	java:S106
+"9Replace this use of System.out or System.err by a logger.(ÓÀ€şûÿÿÿÿ
+W
+java:S3457"AFormat specifiers should be used instead of string concatenation.(ßëÔ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ßëÔ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Ë½Ğ¿
+E
+java:S6212"/Declare this local variable with "var" instead.(Ö£æ’
+J
+java:S6212"/Declare this local variable with "var" instead.(—€†Õùÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ñÃ¨èøÿÿÿÿ
+W
+java:S3457"AFormat specifiers should be used instead of string concatenation.(ƒğ×å
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ƒğ×å
+S	java:S106"9Replace this use of System.out or System.err by a logger.(±Àû³ıÿÿÿÿ
+E
+java:S6212"/Declare this local variable with "var" instead.(õ‘
+E
+java:S6212"/Declare this local variable with "var" instead.(¦Óßò
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Ôºéäùÿÿÿÿ
+S	java:S106!"9Replace this use of System.out or System.err by a logger.(íúáìÿÿÿÿÿ
+M	java:S106$"9Replace this use of System.out or System.err by a logger.(¼ºı
+J
+java:S6212%"/Declare this local variable with "var" instead.(Û©°‹ùÿÿÿÿ
+E
+java:S6212&"/Declare this local variable with "var" instead.(‰—”¶
+6
+java:S2129&" Remove this "String" constructor(‰—”¶
+N	java:S106("9Replace this use of System.out or System.err by a logger.(™ÍÏÓ
+N	java:S106*"9Replace this use of System.out or System.err by a logger.(Ûø…ş
+N	java:S106-"9Replace this use of System.out or System.err by a logger.(ÌÜ£†
+J
+java:S6212."/Declare this local variable with "var" instead.(•“µ€ıÿÿÿÿ
+E
+java:S6212/"/Declare this local variable with "var" instead.(€»™‰
+6
+java:S2129/" Remove this "String" constructor(€»™‰
+S	java:S1061"9Replace this use of System.out or System.err by a logger.(å»Ôõøÿÿÿÿ
+S	java:S1063"9Replace this use of System.out or System.err by a logger.(Î¼ÑŸüÿÿÿÿ
+U	java:S1065"9Replace this use of System.out or System.err by a logger.(äã–8Ÿÿ„¡/

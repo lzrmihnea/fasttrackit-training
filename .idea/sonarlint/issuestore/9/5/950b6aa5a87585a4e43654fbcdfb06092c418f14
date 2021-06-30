@@ -1,0 +1,24 @@
+
+Q	java:S125
+"<This block of commented-out lines of code should be removed.(öú†Ê
+Y
+java:S6208"CMerge the previous cases into this one using comma-separated label.(“·•Ğ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ßÍÅ›
+S	java:S106"9Replace this use of System.out or System.err by a logger.(¡úÿàÿÿÿÿÿ
+S	java:S106 "9Replace this use of System.out or System.err by a logger.( Ğó¦øÿÿÿÿ
+N	java:S106'"9Replace this use of System.out or System.err by a logger.(¶ª»”
+N	java:S106)"9Replace this use of System.out or System.err by a logger.(¨æÍ¡
+S	java:S106+"9Replace this use of System.out or System.err by a logger.(’£Ã¢ùÿÿÿÿ
+S	java:S106-"9Replace this use of System.out or System.err by a logger.(Âæ¯èúÿÿÿÿ
+S	java:S106/"9Replace this use of System.out or System.err by a logger.(ïüàäøÿÿÿÿ
+^
+java:S62086"CMerge the previous cases into this one using comma-separated label.(ó¹™¨ÿÿÿÿÿ
+^
+java:S6208:"CMerge the previous cases into this one using comma-separated label.(ÎÉü‰ùÿÿÿÿ
+^
+java:S6208?"CMerge the previous cases into this one using comma-separated label.(şÿ¦ÿÿÿÿÿ
+S	java:S1067"9Replace this use of System.out or System.err by a logger.(©¦Öšùÿÿÿÿ
+S	java:S106;"9Replace this use of System.out or System.err by a logger.(šÉÁåÿÿÿÿÿ
+S	java:S106@"9Replace this use of System.out or System.err by a logger.(øî üÿÿÿÿ
+j
+java:S1144%"ORemove this unused private "printSomethingDependingOnCarTypeWithIfElse" method.(´êœÒıÿÿÿÿ

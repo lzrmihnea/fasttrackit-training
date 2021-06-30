@@ -1,0 +1,97 @@
+
+ˆ
+java:S1192!"mDefine a constant instead of duplicating this literal "\t (op21, op22, op23, op24): %d, %d, %d, %d
+" 3 times.(Æ«‡Âùÿÿÿÿ
+S
+java:S1854e"8Remove this useless assignment to local variable "op54".(ÎáÆ‘ûÿÿÿÿ
+N
+java:S1854c"8Remove this useless assignment to local variable "op52".(ûÑò¥
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ÍøÚÊÿÿÿÿÿ
+E
+java:S6212	"/Declare this local variable with "var" instead.(ñ„€¤
+E
+java:S6212
+"/Declare this local variable with "var" instead.(ú“¢Ê
+J
+java:S6212"/Declare this local variable with "var" instead.(ú–­æùÿÿÿÿ
+E
+java:S6212"/Declare this local variable with "var" instead.(·˜§õ
+/
+java:S2178"Correct this "&" to "&&".(ìºå
+.
+java:S2178"Correct this "|" to "||".(â©Ä 
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Ñ×‘Á
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ì“ÈÔ
+M	java:S106"9Replace this use of System.out or System.err by a logger.(øûÄ=
+J
+java:S6212"/Declare this local variable with "var" instead.(õŸ¹Ñûÿÿÿÿ
+E
+java:S6212"/Declare this local variable with "var" instead.(‡¾Àí
+J
+java:S6212"/Declare this local variable with "var" instead.(Õµ†õúÿÿÿÿ
+D
+java:S6212"/Declare this local variable with "var" instead.(°³°r
+4
+java:S2178"Correct this "&" to "&&".(šÚ°œşÿÿÿÿ
+M	java:S106 "9Replace this use of System.out or System.err by a logger.(„ÅÏ<
+l
+java:S3457!"Q%n should be used in place of \n to produce the platform-specific line separator.(Æ«‡Âùÿÿÿÿ
+S	java:S106!"9Replace this use of System.out or System.err by a logger.(Æ«‡Âùÿÿÿÿ
+/
+java:S2178$"Correct this "&" to "&&".(™Î¶¯
+S	java:S106%"9Replace this use of System.out or System.err by a logger.(â¼Í¸ùÿÿÿÿ
+l
+java:S3457&"Q%n should be used in place of \n to produce the platform-specific line separator.(Æ«‡Âùÿÿÿÿ
+S	java:S106&"9Replace this use of System.out or System.err by a logger.(Æ«‡Âùÿÿÿÿ
+N	java:S106*"9Replace this use of System.out or System.err by a logger.(ÈïŒÁ
+l
+java:S3457+"Q%n should be used in place of \n to produce the platform-specific line separator.(Æ«‡Âùÿÿÿÿ
+S	java:S106+"9Replace this use of System.out or System.err by a logger.(Æ«‡Âùÿÿÿÿ
+S	java:S106;"9Replace this use of System.out or System.err by a logger.(¡õßåøÿÿÿÿ
+V	java:S125."<This block of commented-out lines of code should be removed.(™ê—üÿÿÿÿ
+E
+java:S6212<"/Declare this local variable with "var" instead.(‡€Ìì
+E
+java:S6212="/Declare this local variable with "var" instead.(Ğåø
+J
+java:S6212>"/Declare this local variable with "var" instead.(Û½Ùçüÿÿÿÿ
+E
+java:S6212?"/Declare this local variable with "var" instead.(µù¤
+g
+java:S3457A"Q%n should be used in place of \n to produce the platform-specific line separator.(ØÜÃ
+N	java:S106A"9Replace this use of System.out or System.err by a logger.(ØÜÃ
+N	java:S106D"9Replace this use of System.out or System.err by a logger.(¦¤¢·
+g
+java:S3457E"Q%n should be used in place of \n to produce the platform-specific line separator.(ØÜÃ
+N	java:S106E"9Replace this use of System.out or System.err by a logger.(ØÜÃ
+E
+java:S6212H"/Declare this local variable with "var" instead.(­Æ¥ô
+E
+java:S6212I"/Declare this local variable with "var" instead.( …üÀ
+D
+java:S6212J"/Declare this local variable with "var" instead.(òûø
+E
+java:S6212K"/Declare this local variable with "var" instead.(á³ÿô
+S	java:S106M"9Replace this use of System.out or System.err by a logger.(üáùŸùÿÿÿÿ
+g
+java:S3457N"Q%n should be used in place of \n to produce the platform-specific line separator.(¦†Ğà
+N	java:S106N"9Replace this use of System.out or System.err by a logger.(¦†Ğà
+M	java:S106["9Replace this use of System.out or System.err by a logger.(éî®g
+g
+java:S3457\"Q%n should be used in place of \n to produce the platform-specific line separator.(¦†Ğà
+N	java:S106\"9Replace this use of System.out or System.err by a logger.(¦†Ğà
+N	java:S106`"9Replace this use of System.out or System.err by a logger.(Äï¼‡
+J
+java:S6212b"/Declare this local variable with "var" instead.(´Ü‡úÿÿÿÿ
+E
+java:S6212c"/Declare this local variable with "var" instead.(ûÑò¥
+J
+java:S6212d"/Declare this local variable with "var" instead.(²Åêóúÿÿÿÿ
+J
+java:S6212e"/Declare this local variable with "var" instead.(ÎáÆ‘ûÿÿÿÿ
+Z	java:S106i"9Replace this use of System.out or System.err by a logger.(Óàôüúÿÿÿÿ8øàÀ„¡/
+X	java:S125h"<This block of commented-out lines of code should be removed.(Æàş®8¢ÕÆ„¡/
+?
+java:S1481c")Remove this unused "op52" local variable.(ûÑò¥
+D
+java:S1481e")Remove this unused "op54" local variable.(ÎáÆ‘ûÿÿÿÿ

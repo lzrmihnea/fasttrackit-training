@@ -1,0 +1,17 @@
+
+V
+java:S1854";Remove this useless assignment to local variable "result1".(ÃşéÁùÿÿÿÿ
+J
+java:S6212"/Declare this local variable with "var" instead.(Û©ãşÿÿÿÿÿ
+J
+java:S6212"/Declare this local variable with "var" instead.(­ùµıÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ÃşéÁùÿÿÿÿ
+E
+java:S6212"/Declare this local variable with "var" instead.(ŠËïÈ
+E
+java:S6212"/Declare this local variable with "var" instead.(ÁÛ­
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ã“””
+U	java:S106"9Replace this use of System.out or System.err by a logger.(—Ó±Š8¿Îº‚¡/
+U	java:S106"9Replace this use of System.out or System.err by a logger.(èØ™Ø8Øÿ½‚¡/
+T	java:S106"9Replace this use of System.out or System.err by a logger.(åùğ8û††¡/
+X	java:S125"<This block of commented-out lines of code should be removed.(ûÌ¦8ü‚‰†¡/
