@@ -1,9 +1,9 @@
-package org.fasttrackit.springdemo;
+package org.fasttrackit.springdemo.sample;
 
+import org.fasttrackit.springdemo.service.HumanService;
 import org.fasttrackit.springdemo.model.Professor;
 import org.fasttrackit.springdemo.model.Student;
 import org.fasttrackit.springdemo.repository.Repository;
-import org.fasttrackit.springdemo.util.StaticServiceLocator;
 
 public class InjectionDemoRunner {
 

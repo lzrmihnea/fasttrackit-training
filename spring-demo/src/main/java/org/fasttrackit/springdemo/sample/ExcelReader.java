@@ -1,4 +1,4 @@
-package org.fasttrackit.springdemo;
+package org.fasttrackit.springdemo.sample;
 
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.*;

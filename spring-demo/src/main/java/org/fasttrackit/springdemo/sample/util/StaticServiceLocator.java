@@ -1,6 +1,6 @@
-package org.fasttrackit.springdemo.util;
+package org.fasttrackit.springdemo.sample.util;
 
-import org.fasttrackit.springdemo.HumanService;
+import org.fasttrackit.springdemo.service.HumanService;
 import org.fasttrackit.springdemo.model.Professor;
 import org.fasttrackit.springdemo.model.Student;
 import org.fasttrackit.springdemo.repository.Repository;
