@@ -57,4 +57,8 @@ public class StudentService {
         this.studentRepository.deleteById(studentIdToDelete);
     }
 
+    public List<StudentEntity> findAllNamedPop() {
+        return this.studentRepository.findAllNamedPop();
+    }
+
 }

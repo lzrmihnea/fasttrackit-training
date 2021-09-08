@@ -2,6 +2,8 @@ package org.fasttrackit.demo02.repository.dao;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.Objects;
+import java.util.Set;
 
 @Entity(name = "students")
 public class StudentEntity {
@@ -14,6 +16,8 @@ public class StudentEntity {
     private String firstname;
     @Column(name = "date_of_birth")
     private Date dateOfBirth;
+    @OneToMany(mappedBy = "student")
+    private Set<ExamResult> results;
 
     public Long getId() {
         return id;
@@ -45,5 +49,26 @@ public class StudentEntity {
 
     public void setDateOfBirth(Date dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
+    }
+
+    public Set<ExamResult> getResults() {
+        return results;
+    }
+
+    public void setResults(Set<ExamResult> results) {
+        this.results = results;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        StudentEntity that = (StudentEntity) o;
+        return Objects.equals(id, that.id) && Objects.equals(lastname, that.lastname) && Objects.equals(firstname, that.firstname) && Objects.equals(dateOfBirth, that.dateOfBirth);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, lastname, firstname, dateOfBirth);
     }
 }
