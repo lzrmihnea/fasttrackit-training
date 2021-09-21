@@ -19,7 +19,7 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-actuator:2.5.4'
 
 	implementation 'org.springframework.data:spring-data-jpa:2.5.4'
-	implementation 'org.postgresql:postgresql:42.2.23'
+	implementation 'org.postgresql:postgresql:42.2.23.jre7'
 
 	implementation 'io.springfox:springfox-swagger2:3.0.0'
 	implementation 'io.springfox:springfox-boot-starter:3.0.0'
