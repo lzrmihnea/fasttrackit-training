@@ -3,11 +3,10 @@ package org.fasttrackit.demo02.repository.dao;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.ManyToOne;
 import java.util.Objects;
 
 @Entity(name = "exam_result")
-public class ExamResult {
+public class ExamResultEntity {
     @Id
     private Long id;
     @Column
@@ -16,20 +15,18 @@ public class ExamResult {
     private String name;
     @Column
     private Integer mark;
-    @ManyToOne
-    private StudentEntity student;
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        ExamResult that = (ExamResult) o;
-        return Objects.equals(id, that.id) && Objects.equals(subject, that.subject) && Objects.equals(name, that.name) && Objects.equals(mark, that.mark) && Objects.equals(student, that.student);
+        ExamResultEntity that = (ExamResultEntity) o;
+        return Objects.equals(id, that.id) && Objects.equals(subject, that.subject) && Objects.equals(name, that.name) && Objects.equals(mark, that.mark);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, subject, name, mark, student);
+        return Objects.hash(id, subject, name, mark);
     }
 
     public Long getId() {
@@ -62,13 +59,5 @@ public class ExamResult {
 
     public void setMark(Integer mark) {
         this.mark = mark;
-    }
-
-    public StudentEntity getStudent() {
-        return student;
-    }
-
-    public void setStudent(StudentEntity student) {
-        this.student = student;
     }
 }

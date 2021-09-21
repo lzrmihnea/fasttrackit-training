@@ -1,8 +1,10 @@
 package org.fasttrackit.demo02.service;
 
-import org.fasttrackit.demo02.model.Student;
 import org.fasttrackit.demo02.repository.StudentRepository;
+import org.fasttrackit.demo02.repository.dao.ExamResultEntity;
 import org.fasttrackit.demo02.repository.dao.StudentEntity;
+import org.fasttrackit.demo02.service.model.ExamResultDto;
+import org.fasttrackit.demo02.service.model.StudentDto;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -17,24 +19,18 @@ public class StudentService {
         this.studentRepository = studentRepository;
     }
 
-    public List<Student> getAllStudents() {
+    public List<StudentDto> getAllStudents() {
         final List<StudentEntity> all = this.studentRepository.findAll();
         return all.stream()
-                .map(studentEntity -> {
-                    Student createdStudent = new Student();
-                    createdStudent.setId(studentEntity.getId());
-                    createdStudent.setFirstname(studentEntity.getFirstname());
-                    createdStudent.setLastname(studentEntity.getLastname());
-                    createdStudent.setDateOfBirth(studentEntity.getDateOfBirth());
-                    return createdStudent;
-                })
+                .map(this::mapToStudentDto)
                 .collect(Collectors.toList());
     }
 
-    public List<Student> findAllByLastname(String lastname) {
+    public List<StudentDto> findAllByLastname(String lastname) {
+
         return this.studentRepository.findAllByLastnameContains(lastname).stream()
                 .map(studentEntity -> {
-                    Student createdStudent = new Student();
+                    StudentDto createdStudent = new StudentDto();
                     createdStudent.setId(studentEntity.getId());
                     createdStudent.setFirstname(studentEntity.getFirstname());
                     createdStudent.setLastname(studentEntity.getLastname());
@@ -44,7 +40,7 @@ public class StudentService {
                 .collect(Collectors.toList());
     }
 
-    public void createOrUpdateStudent(Student toCreate) {
+    public void createOrUpdateStudent(StudentDto toCreate) {
         StudentEntity createOrUpdateMe = new StudentEntity();
         createOrUpdateMe.setId(toCreate.getId());
         createOrUpdateMe.setFirstname(toCreate.getFirstname());
@@ -57,8 +53,33 @@ public class StudentService {
         this.studentRepository.deleteById(studentIdToDelete);
     }
 
-    public List<StudentEntity> findAllNamedPop() {
-        return this.studentRepository.findAllNamedPop();
+    public List<StudentDto> findAllNamedPop() {
+        return this.studentRepository.findAllNamedPop()
+                .stream()
+                .map(this::mapToStudentDto)
+                .collect(Collectors.toList());
+    }
+
+    private StudentDto mapToStudentDto(StudentEntity studentEntity) {
+        StudentDto createdStudent = new StudentDto();
+        createdStudent.setId(studentEntity.getId());
+        createdStudent.setFirstname(studentEntity.getFirstname());
+        createdStudent.setLastname(studentEntity.getLastname());
+        createdStudent.setDateOfBirth(studentEntity.getDateOfBirth());
+        createdStudent.setResults(studentEntity.getResults()
+                .stream()
+                .map(this::mapToExamResultsDto)
+                .collect(Collectors.toSet()));
+        return createdStudent;
+    }
+
+    private ExamResultDto mapToExamResultsDto(ExamResultEntity resultEntity) {
+        ExamResultDto resultDto = new ExamResultDto();
+        resultDto.setId(resultEntity.getId());
+        resultDto.setName(resultEntity.getName());
+        resultDto.setSubject(resultEntity.getSubject());
+        resultDto.setMark(resultEntity.getMark());
+        return resultDto;
     }
 
 }

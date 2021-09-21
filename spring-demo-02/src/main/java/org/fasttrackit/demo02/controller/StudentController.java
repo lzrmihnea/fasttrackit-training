@@ -1,8 +1,8 @@
 package org.fasttrackit.demo02.controller;
 
-import org.fasttrackit.demo02.model.Student;
-import org.fasttrackit.demo02.repository.dao.StudentEntity;
 import org.fasttrackit.demo02.service.StudentService;
+import org.fasttrackit.demo02.service.model.StudentDto;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -12,6 +12,8 @@ import java.util.List;
 public class StudentController {
 
     private final StudentService studentService;
+    @Value("${myproperty.value}")
+    private String messageFromPropertyFile;
 
     public StudentController(StudentService service) {
         this.studentService = service;
@@ -19,11 +21,12 @@ public class StudentController {
 
     @GetMapping("/hello")
     public ResponseEntity<String> getSampleText() {
-        return ResponseEntity.ok("<h1>There are no students</h1> <br> <h2>Asta e!</h2>");
+        return ResponseEntity.ok("<h1>There are no students</h1> <br> "
+                + messageFromPropertyFile);
     }
 
     @GetMapping("/api/students")
-    public ResponseEntity<List<Student>> getAllStudents(
+    public ResponseEntity<List<StudentDto>> getAllStudents(
             @RequestParam(name = "lastname", required = false) String searchByLastname) {
 
         if (searchByLastname != null && !searchByLastname.isBlank()) {
@@ -33,7 +36,7 @@ public class StudentController {
     }
 
     @PostMapping("/api/students")
-    public ResponseEntity createOrUpdateStudent(@RequestBody Student studentRequest) {
+    public ResponseEntity createOrUpdateStudent(@RequestBody StudentDto studentRequest) {
         this.studentService.createOrUpdateStudent(studentRequest);
         return ResponseEntity.ok().build();
     }
@@ -44,7 +47,7 @@ public class StudentController {
     }
 
     @GetMapping("/api/students-pop")
-    public ResponseEntity<List<StudentEntity>> getAllStudentsNamedPop() {
+    public ResponseEntity<List<StudentDto>> getAllStudentsNamedPop() {
         return ResponseEntity.ok(studentService.findAllNamedPop());
     }
 }

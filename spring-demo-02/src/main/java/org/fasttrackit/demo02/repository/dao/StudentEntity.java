@@ -16,8 +16,9 @@ public class StudentEntity {
     private String firstname;
     @Column(name = "date_of_birth")
     private Date dateOfBirth;
-    @OneToMany(mappedBy = "student")
-    private Set<ExamResult> results;
+    @OneToMany
+    @JoinColumn(name = "student_id")
+    private Set<ExamResultEntity> results;
 
     public Long getId() {
         return id;
@@ -51,11 +52,11 @@ public class StudentEntity {
         this.dateOfBirth = dateOfBirth;
     }
 
-    public Set<ExamResult> getResults() {
+    public Set<ExamResultEntity> getResults() {
         return results;
     }
 
-    public void setResults(Set<ExamResult> results) {
+    public void setResults(Set<ExamResultEntity> results) {
         this.results = results;
     }
 
