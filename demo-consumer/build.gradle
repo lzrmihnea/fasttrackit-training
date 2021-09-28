@@ -13,8 +13,11 @@ repositories {
 }
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter'
-	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	implementation 'org.springframework.boot:spring-boot-starter:2.5.4'
+	implementation 'org.springframework.amqp:spring-amqp:2.3.10'
+	implementation 'org.springframework.amqp:spring-rabbit:2.3.10'
+
+	testImplementation 'org.springframework.boot:spring-boot-starter-test:2.5.4'
 }
 
 test {
